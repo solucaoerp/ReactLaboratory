@@ -1,0 +1,9 @@
+{
+    "name": "dotec",
+    "short_name": "dotec",
+    "start_url": "/",
+    "background_color": "#17a2b8",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#17a2b8"
+}
