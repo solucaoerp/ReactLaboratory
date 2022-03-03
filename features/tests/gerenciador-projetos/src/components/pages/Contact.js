@@ -1,3 +1,3 @@
 export default function Contact() {
-    return <h1>Componente Contact</h1>
+    return <h1>Contact</h1>
 }
