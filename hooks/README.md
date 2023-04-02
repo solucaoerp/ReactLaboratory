@@ -149,4 +149,4 @@ function MeuComponente() {
 ## Vídeos Recomendados
 
 - [JavaScript Promise - entenda a base](https://youtu.be/7KFduI7VLOM "JavaScript Promise - entenda a base")
-
+- [JavaScript Funções Construtoras e Prototype](https://youtu.be/cSFskNH1E5k "JavaScript Funções Construtoras e Prototype")
