@@ -117,7 +117,7 @@ Hooks são uma nova adição ao React 16.8 que permitem que você use o estado e
 
 Com os Hooks, você pode usar o estado em um componente funcional, permitindo que ele tenha um comportamento dinâmico, como um componente de classe. Isso ajuda a simplificar o código, tornando-o mais fácil de entender e manter.
 
-## useState Hook
+## useState
 
 É usado para adicionar estado a um componente funcional no React. Ele retorna um par de valores: o valor atual do estado e uma função que pode ser usada para atualizar esse estado.
 
