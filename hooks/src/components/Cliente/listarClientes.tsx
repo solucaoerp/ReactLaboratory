@@ -4,7 +4,11 @@ import { Cliente } from "../../types/Cliente";
 import { Table } from "react-bootstrap";
 import { BASE_URL } from "../../utils/requests";
 
-export default function ClientesAxios() {
+/**
+ * @deprecated Use o componente 'FindAllRequest em Cliente/findAll/FindAllRequest' em seu lugar.
+ */
+
+export default function ListarClientes() {
     const [clientes, setClientes] = useState<Cliente[]>([]);
 
     useEffect(() => {
