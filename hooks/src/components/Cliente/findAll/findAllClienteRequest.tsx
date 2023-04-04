@@ -4,10 +4,9 @@ import axios from "axios";
 import { Cliente } from "../../../types/Cliente";
 import { BASE_URL } from "../../../utils/requests";
 
-import FindAllView from "./findAllView";
+import FindAllClienteView from "./findAllClienteView";
 
-
-export default function FindAllCliente() {
+export default function FindAllClienteRequest() {
     const [clientes, setClientes] = useState<Cliente[]>([]);
 
     useEffect(() => {
@@ -22,7 +21,7 @@ export default function FindAllCliente() {
         <div>
             <h2>Clientes</h2>
 
-            <FindAllView clientes={clientes} />
+            <FindAllClienteView clientes={clientes} />
         </div>
     );
 }

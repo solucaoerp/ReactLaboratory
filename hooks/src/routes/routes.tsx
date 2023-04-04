@@ -4,7 +4,7 @@ import HomePage from "../pages/Home";
 import Sobre from "../pages/Sobre";
 import Contato from "../pages/Contato";
 
-import FindAllCliente from "../components/Cliente/findAll/findAllCliente";
+import FindAllClienteRequest from "../components/Cliente/findAll/findAllClienteRequest";
 
 export default function AppRoutes() {
   return (
@@ -12,7 +12,7 @@ export default function AppRoutes() {
       <Route path="/home" element={<HomePage />} />
       <Route path="/sobre" element={<Sobre />} />
       <Route path="/contato" element={<Contato />} />
-      <Route path="/clientes" element={<FindAllCliente />} />
+      <Route path="/clientes" element={<FindAllClienteRequest />} />
 
       <Route path="*" element={<Navigate to="/home" />} />
     </Routes>
