@@ -21,10 +21,10 @@ export default function Clientes() {
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>NOME</th>
-                        <th>TELEFONE</th>
-                        <th>EMAIL</th>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
                     </tr>
                 </thead>
                 <tbody>

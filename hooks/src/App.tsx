@@ -1,18 +1,17 @@
-import Clientes from "./components/Cliente/List";
-import ClientesAxios from "./components/Cliente/ListAxios";
-import { ExportConsumerAPis, ExportContadorUseEffect } from "./hooks/useEffect";
-import { ExportContador, ExportPessoa, ExportTodo } from "./hooks/useState";
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/layouts/Navbar";
+import AppRoutes from "./routes/routes";
+import { Container } from "react-bootstrap";
+import Footer from "./components/layouts/Footer";
 
 export default function App() {
   return <>
-    <Clientes />
-    <ClientesAxios />
-
-    {/* <ExportConsumerAPis />
-    <ExportContadorUseEffect /> */}
-
-    {/* <ExportContador />
-    <ExportPessoa />
-    <ExportTodo /> */}
+    <BrowserRouter>
+      <Navbar />
+      <Container>
+        <AppRoutes />
+      </Container>
+      <Footer />
+    </BrowserRouter>
   </>
 };

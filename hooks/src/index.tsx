@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 /* Modo Desenvolvimento */
 
 import React from 'react';
