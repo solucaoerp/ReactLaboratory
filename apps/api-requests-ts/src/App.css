@@ -1,0 +1,17 @@
+.container-global {
+  width: 800px;
+  margin: 30px auto
+}
+
+form {
+  width: 600px;
+  text-align: right;
+}
+
+form input {
+  margin-bottom: 7px;
+}
+
+form input[type='button'] {
+  margin-left: 10px;
+}
