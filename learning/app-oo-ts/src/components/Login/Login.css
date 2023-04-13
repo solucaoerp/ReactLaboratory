@@ -1,0 +1,65 @@
+.login-container {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 500px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: rgb(236, 243, 235);
+}
+
+.custom-input {
+    border-radius: 5px;
+    border: 1px solid #c5c8cb;
+    padding: 10px;
+}
+
+.custom-checkbox label {
+    color: #007bff;
+    font-weight: normal;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    border: 1px solid #c5c8cb;
+}
+
+.custom-checkbox label {
+    color: #007bff;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    margin-left: 2px;
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+.custom-button {
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: normal;
+    border: none;
+    color: #fff;
+}
+
+.custom-button-primary {
+    background-color: #007bff;
+}
+
+.custom-button-link {
+    color: #007bff;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.custom-button-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
