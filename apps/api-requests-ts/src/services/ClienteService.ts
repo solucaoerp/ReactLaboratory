@@ -2,6 +2,14 @@ import { Cliente } from '../models/Cliente';
 import { validaEmail, validaTelefone } from '../utils/validadao';
 
 const validaCamposCliente = (cliente: Cliente): void => {
+    cliente.nome = cliente.nome.trim();
+    cliente.telefone = cliente.telefone.trim();
+    cliente.email = cliente.email.trim();
+
+    if (!cliente.nome || cliente.nome.trim() === "") {
+        throw new Error('O campo "nome" é obrigatório');
+    }
+
     if (!cliente.nome || cliente.nome.trim() === '') {
         throw new Error('O campo "nome" é obrigatório');
     }
@@ -14,8 +22,8 @@ const validaCamposCliente = (cliente: Cliente): void => {
         throw new Error('O campo "telefone" é obrigatório');
     }
 
-    if (cliente.telefone.length < 10 || cliente.telefone.length > 11) {
-        throw new Error('O campo "telefone" deve ter entre 10 e 11 caracteres');
+    if (cliente.telefone.length < 9 || cliente.telefone.length > 11) {
+        throw new Error('O campo "telefone" deve ter entre 9 e 11 caracteres');
     }
 
     if (!validaTelefone(cliente.telefone)) {

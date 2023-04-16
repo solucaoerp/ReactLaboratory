@@ -1,0 +1,21 @@
+.containerWithBorder {
+    border: 1px solid #a1a5aa;
+    border-radius: 1px;
+    margin: 7px;
+}
+
+.button-add {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.input-control {
+    max-width: 100%;
+}
+
+.button-control {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

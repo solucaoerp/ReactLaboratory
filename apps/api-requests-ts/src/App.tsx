@@ -4,7 +4,7 @@ import "./styles/App.css";
 import ClienteList from './components/Cliente/ClienteList';
 import ResponseTest from './hooks/ResponseTest';
 import ClienteSave from './components/Cliente/ClienteSave';
-import ClienteCrud from './views/pages/ClienteCrud/ClienteCrud';
+import ClienteDashboard from './views/pages/Cliente/ClienteDashboard';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
 
         <Route path="/clientes-new" element={<ClienteSave endpoint="http://localhost:8080/clientes" />} />
         <Route path="/endpoint-test" element={<ResponseTest endpoint="http://localhost:8080/clientes" />} />
-        <Route path="/clientes-crud" element={<ClienteCrud />} />
+        <Route path="/clientes-crud" element={<ClienteDashboard />} />
       </Routes>
     </div>
   );
