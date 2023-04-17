@@ -3,9 +3,15 @@ import { Footer } from "../components/Learning/Footer";
 import { Header } from "../components/Learning/Header";
 
 const App002 = () => {
-    const [bg, setBg] = useState("#FF0000");
+    const [bg, setBg] = useState("#0000FF");
     const [name, setName] = useState("Charles");
     const [age, setAge] = useState(43);
+
+    const [list, setList] = useState([
+        "conteudo 001 da lista",
+        "conteudo 002 da lista",
+        "conteudo 003 da lista",
+    ]);
 
     const handle20 = () => {
         setAge(20);
@@ -31,6 +37,14 @@ const App002 = () => {
             {age === 20 &&
                 <button onClick={handle43} >Estou com 43 anos.</button>
             }
+
+            <hr />
+            <ul>
+                {list.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+            <hr />
 
             <Footer />
         </div>
